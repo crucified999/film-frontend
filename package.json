@@ -11,7 +11,7 @@
     "lint": "eslint --fix",
     "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\" --ignore-path ./.prettierignore",
     "check": "npm run stylelint:fix && npm run lint && npm run format",
-    "prepare": "husky"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "lint-staged": {
     "*.{css,scss}": "npm run stylelint:fix",
@@ -20,9 +20,9 @@
   },
   "config": {
     "commitizen": {
-        "path": "./node_modules/cz-conventional-changelog"
+      "path": "./node_modules/cz-conventional-changelog"
     }
-},
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -70,8 +70,13 @@
     "webpack-merge": "^6.0.1"
   },
   "dependencies": {
+    "@babel/core": "^7.28.0",
+    "@babel/eslint-parser": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
+    "@babel/preset-typescript": "^7.27.1",
     "clsx": "^2.1.1",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.6.3"
   }
 }

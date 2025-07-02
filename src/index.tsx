@@ -1,6 +1,14 @@
-const numbers: number[] = [2, 3, 5];
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+import App from "./components/app/app";
+import './index.css';
 
-// Стрелочная функция. Не запнётся ли на ней Internet Explorer?
-const doubledNumbers = numbers.map((number) => number * 2);
 
-console.log(doubledNumbers); // 4, 6, 10
+const domNode = document.getElementById('root') as HTMLDivElement;
+const root = createRoot(domNode);
+
+root.render(
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>
+);
