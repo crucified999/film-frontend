@@ -1,0 +1,29 @@
+.container {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  gap: 16px;
+  color: #FFFFFF;
+  background-color: #2F3951;
+  border-radius: 16px;
+  width: 350px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: border 0.15s linear;
+}
+
+.container:hover {
+  border: 1px solid #F0D288;
+}
+
+.image {
+  width: 117px;
+  height: 123px;
+  object-fit: cover;
+  object-position: center;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+
+.title {
+  align-self: center;
+}

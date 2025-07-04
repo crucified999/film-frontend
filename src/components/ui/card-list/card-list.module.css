@@ -1,0 +1,8 @@
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  margin: 50px 405px;
+  list-style: none;
+}
