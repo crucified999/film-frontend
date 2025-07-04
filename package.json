@@ -40,6 +40,8 @@
     "css-loader": "^7.1.2",
     "cssnano": "^7.0.7",
     "cz-conventional-changelog": "^3.3.0",
+    "dot-env": "^0.0.1",
+    "dotenv-webpack": "^8.1.1",
     "eslint": "^9.30.1",
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-eslint-comments": "^3.2.0",
